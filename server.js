@@ -23,5 +23,6 @@ app.listen(process.env.PORT || 3000, () => {
 app.use('/employee', employeeController);
 
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname + "/views/home.html")
+  //  res.sendFile(__dirname + "/views/home.html")
+    res.json('hello')
 })
